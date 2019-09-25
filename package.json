@@ -1,19 +1,21 @@
 {
-  "name": "reveal.js",
+  "name": "ui.ux",
   "version": "3.8.0",
-  "description": "The HTML Presentation Framework",
-  "homepage": "http://revealjs.com",
+  "description": "UI/UX Presentation HRR-41 September 2019 / Reveal JS Framework",
+  "homepage": "https://ingdjason.github.io/ui-ux-reveal-djason/",
   "subdomain": "revealjs",
   "main": "js/reveal.js",
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve",
-    "build": "grunt"
+    "build": "grunt",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "http://hakim.se"
+    "name": "Djason I. Sylvaince",
+    "email": "djasonsylvaince@gmail.com",
+    "web": "https://about.me/sylvaincedjason"
   },
   "repository": {
     "type": "git",
@@ -40,5 +42,8 @@
     "mustache": "^2.3.0",
     "socket.io": "^2.2.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }
