@@ -7,8 +7,9 @@
 		<title>reveal.js</title>
 
 		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/float-process.css">
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/beige.css">
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -21,12 +22,229 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<style>
+			.cover-intro {
+				opacity: 0.2;
+			}
+
+			.rotated {
+				transform: rotate(20grad);
+			}
+			.rotated-neg {
+				transform: rotate(-20grad);
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-background-image="images/background_full.jpeg" data-background-size="cover" class="cover-intro" data-transition="zoom">
+						<h1 style="color:black">UI / UX <br /> DESIGN</h1>
+				</section>
+				<section data-background-color="#fff" data-transition="slide-in fade-out">
+					<p class="fragment" data-fragment-index="1">
+						Similarity & Differences
+					</p>
+					<p class="fragment" data-fragment-index="2">
+						Design Thinking Process
+					</p>
+					<p class="fragment" data-fragment-index="3">
+						Key Points for UX/UI Design
+					</p>
+					<p class="fragment" data-fragment-index="4">
+						Wireframing & Prototyping
+					</p>
+					<p class="fragment" data-fragment-index="5">
+						Good VS Bad Designs (example)
+					</p>
+					<p class="fragment" data-fragment-index="6">
+							Question ?<br />
+							<img style="width:50px;height: 50px;" data-src="images/question-mark.jpg" />
+						</p>
+				</section>
+<!--Similarity & Differences -->
+				<section data-background-color="#fff" data-transition="convex">
+					<section>
+						<h3 style="text-align: left;">UX : User experience</h3>
+						<img class="rotated" style="float: right;width:350px;height: 250px;border-style:none" data-src="images/ux.jpg" />
+						<p>
+							A User Experience (UX) designer is responsible for designing the experience that users have when interacting with a product.
+							<br /><br />
+							<code class="hljs" style="font-size:0.4em;display: block;" data-trim contenteditable>
+								improving the usability, ease of use, and pleasure provided in the interaction between the customer and the product
+							</code>
+						</p>
+					</section>
+					<section>
+							<h3 style="text-align: right;">UI : User Interface</h3>
+
+							<img class="rotated-neg" style="float: left;width:180px;height: 200px;border-style:none" data-src="images/ui.jpg" />
+						<p>
+							<p>
+								User Interface design, or UI, focuses on incorporating a visual hierarchy into a design for the user to follow.
+							</p>
+							<code class="hljs" style="font-size:0.4em;display: block;" data-trim contenteditable>
+								Both elements are crucial to a product and work closely together. But despite their professional relationship, the roles themselves are quite different, referring to very different parts of the process and the design discipline.
+							</code>
+					</section>
+					<section>
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th data-sort="name" colspan="2">responsibilities</th>
+								</tr>
+								<tr>
+									<th data-sort="name">
+										<center>UX</center>
+									</th>
+									<th data-sort="name">
+										<center>UI</center>
+									</th>
+								</tr>
+							</thead>
+								<tbody>
+									<tr>
+										<td><a href="#">Strategy and Content</a></td>
+										<td><a href="#">Look and Feel</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Execution and Analytics</a></td>
+										<td><a href="#">Responsiveness and Interactivity</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Analysis and Iteration</a></td>
+										<td><a href="#">UI Prototyping</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Generating task and user flows</a></td>
+										<td><a href="#">Implementation with Developer</a></td>
+									</tr>
+									<tr>
+										<td><a href="#">Creating sketches, high and low fidelity wireframes, and prototypes</a></td>
+										<td><a href="#">UI designers focus on the visual hierarchy and patterns</a></td>
+									</tr>
+								</tbody>
+						</table>
+					</section>
+				</section>
+<!--Design Thinking Process-->
+				<section data-background-color="#fff" data-transition="convex">
+					<section >
+							<h3 style="text-align: left;">Design Thinking Process</h3>
+							<img style="padding:10px;width: 100%;border-style:none;" data-src="images/design-thinking-2.png">
+					</section>
+					<section>
+							<img style="padding:10px;width: 100%;height: 650px; border-style:none;" data-src="images/design-thinking-details.jpg">
+					</section>
+					<section>
+							<h3 style="text-align: left;">The 5W + 1H of Kaizen</h3>
+							<p>is An iterative interrogative technique that fits perfectly to elaborate a project planning.
+								<br />
+								<st style="font-size:0.5em;color:red">" WHO , When , Why, What, How, Where "</st>
+							</p>
+							<small><a style="font-size: 0.6em;" href="https://medium.com/techcatch/how-to-plan-projects-with-5w1h-approach-8cab17ec5513" target="_blank">Click here to find more about the 5W+1H in project management </a></small>
+
+							<small><a style="font-size: 0.6em;" href="https://www.interaction-design.org/literature/article/5-stages-in-the-design-thinking-process" target="_blank">5 Stages in the Design Thinking Process</a></small>
+
+							<img style="padding:10px;width: 50%;height: 250px; border-style:none;" data-src="images/design-thinking-map-1otf7yw.jpg">
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3 style="text-align: left;">Key Points for UX/UI Design</h3>
+						<p class="fragment" data-fragment-index="1">
+								Focus on the Experience
+						</p>
+						<p class="fragment" data-fragment-index="2">
+								Make it Easy (Simplicity)
+						</p>
+						<p class="fragment" data-fragment-index="3">
+								Make it scannable (use simple terms, Sentences, Images)
+						</p>
+						<p class="fragment" data-fragment-index="4">
+								Use a Clear Call to Action (Use a clear label)
+						</p>
+						<p class="fragment" data-fragment-index="5">
+								Assure SEO fundamentals are in place (URL, Title, Meta Description)
+								<br />
+								<small><a style="font-size: 0.6em;" href="https://www.freshconsulting.com/homepage-ui-design/" target="_blank">Click here for more details</a></small>
+						</p>
+
+					</section>
+				</section>
+<!-- Wireframing & Prototyping (Mockup)-->
+				<section>
+					<section>
+						<h3 style="text-align: left;">Wireframing & Prototyping (Mockup)</h3>
+						<p>
+							<ul>
+								<li>
+									wireframe focuses on functional features instead of visual elements
+								</li>
+								<li>
+									Prototype can be clicked and when you click, you get a respond. The clickable prototype simulates how users interact with the UI interface in a real way, increases the effectiveness of your communication
+								</li>
+								<li>
+									Mockup delivers the visual look of product design.
+								</li>
+							</ul>
+							<small><a style="font-size: 0.6em;" href="https://medium.com/mockingbot/whats-the-difference-between-wireframe-prototype-mockup-17615f77938f" target="_blank">Want to know more, visit this link</a></small>
+						</p>
+					</section>
+					<section>
+						<div class="container">
+							<div class="notice notice-success">
+									<strong>Proto.io </strong> (Web)
+							</div>
+							<div class="notice notice-info">
+									<strong>Mockflow </strong> (Web, macOS, Windows)
+							</div>
+							<div class="notice notice-success">
+									<strong>Invision</strong> (Web)
+							</div>
+							<div class="notice notice-info">
+									<strong>Sketch</strong> (macOS)
+							</div>
+							<div class="notice notice-success">
+									<strong>Figma</strong> (Web, macOS, Windows, Linux)
+							</div>
+						</div>
+						<small><a style="font-size: 0.6em;" href="https://zapier.com/blog/best-wireframe-tools/" target="_blank">The 14 Best Wireframe Tools for 2019</a></small>
+					</section>
+				</section>
+<!--Good VS Bad Designs (example)-->
+				<section>
+					<section><h3 style="text-align: left;">Good VS Bad Designs (example)</h3></section>
+					<section data-background-image="images/bad-website-design_650.jpg" data-background-size="cover" class="cover-intro" >
+					</section>
+					<section>
+							<p style="float: left;">
+									<ul style="font-size: 0.7em;">
+										<li>-	Unreadable Color Combination</li>
+										<li>-	Misplaced Interface Elements</li>
+										<li>-	Visually Confusing Design</li>
+										<li>-	Textually Confusing Design</li>
+									</ul>
+							</p>
+							<img class="rotated-neg" style="float: right;width:90%;height: 450px;border-style:none" data-src="images/baddesign2.jpg" />
+					</section>
+					<section data-background-image="images/giphy-excited.gif" data-background-size="contain" class="cover-intro" >
+					</section>
+					<section>
+							<p style="float: left;">
+									<ul style="font-size: 0.7em;">
+										<li>-	Medium</li>
+										<li>-	Airbnb</li>
+										<li>-	Dropbox</li>
+										<li>-	Spotify</li>
+									</ul>
+							</p>
+							<img class="rotated-neg" style="float: right;width:90%;height: 450px;border-style:none" data-src="images/spotify.png" />
+					</section>
+				</section>
+				<section data-background-image="images/giphy-question.gif" data-background-size="contain" class="cover-intro">
+					Thank you!!!
+				</section>
 			</div>
 		</div>
 
@@ -42,8 +260,24 @@
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true }
-				]
+				],
+				markdown: {
+					smartypants: true
+				}
 			});
 		</script>
 	</body>
 </html>
+
+
+<!-- <div class="container">
+									<div class="notice notice-success">
+											<strong>Notice</strong> notice-success
+									</div>
+									<div class="notice notice-danger">
+											<strong>Notice</strong> notice-danger
+									</div>
+									<div class="notice notice-info">
+											<strong>Notice</strong> notice-info
+									</div>
+							</div> -->
